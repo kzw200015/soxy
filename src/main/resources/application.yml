@@ -1,0 +1,11 @@
+soxy:
+  port: 8080
+  proxy-configs:
+    localhost:
+      protocol: HTTP
+      upstream: https://www.baidu.com:443
+      socks: socks5://127.0.0.1:7890
+logging:
+  level:
+    cc.jktu.soxy.HttpServerHandler: debug
+    cc.jktu.soxy.HttpRespWriteBackHandler: debug
